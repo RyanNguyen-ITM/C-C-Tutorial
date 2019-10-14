@@ -1,0 +1,179 @@
+CÁC KHÁI NIỆM CƠ BẢN VỀ KỸ THUẬT LẬP TRÌNH
+
+CÁC BÀI TẬP CƠ BẢN
+
+Bài tập 1:
+Viết chương trình in ra các dòng chữ sau đây:
+
+	 1. In C, lowercase letters are significant.
+	 2. main is where program execution begins.
+	 3. Opening and closing braces enclose program statements in a routine.
+	 4. All program statements must be terminated by a semicolon.
+
+#include <stdio.h>
+int main (void)
+{
+	printf ("\t1. In C, lowercase letters are significant.\n");
+	printf ("\t2. main is where program execution begins.\n");
+	printf ("\t3. Opening and closing braces enclose program statements in a routine.\n");
+	printf ("\t4. All program statements must be terminated by a semicolon.\n");
+	return 0;
+}
+
+Chú ý:
+1.	Ngôn ngữ C phân biệt chữ hoa và chữ thường.
+2.	Mỗi chương trình luôn có một và chỉ một hàm main. Hàm main sẽ là nơi đầu tiên chương trình thực hiện.
+3.	Mỗi khi có mở ngoặc thì phải có đóng ngoặc. vd: {…} và (…)
+4.	Các dòng lệnh phải kết thúc bằng dấu chấm phẩy ‘;’
+
+Bài tập 2:
+Viết chương trình tính ra kết quả của phép trừ 15 cho 87, và xuất kết quả ra màn hình.
+
+#include <stdio.h>
+int main (void)
+{
+	int x = 15;
+	int y = 87;
+	int z = x – y;
+	printf ("%d - %d = %d", x, y, z);
+	return 0;
+}
+
+Bài tập 3:
+Viết đoạn chương trình sau đây mà không có các ký tự bôi đen, sau đó biên dịch chương trình (F7) và xem thông báo lỗi. Ghi chú lại các lỗi mà chương trình thông báo. Sau đó, sửa lại chương trình cho đúng và biên dịch lại.
+Ghi chú: thông báo lỗi sẽ hiện ra ở cửa sổ phía dưới của Visual C++. Nhấn F4 lần lượt nhảy đến các lỗi.
+
+#include <stdio.h>
+#define TWENTYFIVE	25;
+int main ()
+{
+	int sum;
+	/* COMPUTE RESULT */
+	sum = TWENTYFIVE + 37 – 19;
+	/* DISPLAY RESULTS */
+	printf ("The answer is %i\n", sum);
+	return 0;
+}
+
+Bài tập 4:
+Viết đoạn chương trình sau đây và dự đoán kết quả của chương trình. Sau đó biên dịch và chạy chương trình để xem kết quả chính xác. Nếu kết quả khác với mình dự đoán thì phân tích xem tại sao lại như vậy.
+
+#include <stdio.h>
+int main ()
+{
+	int answer, result;
+	answer = 100;
+	result = answer - 10;
+	printf ("The result is %i\n", result + 5);
+	return 0;
+}
+
+The result is 95
+
+Bài tập 5:
+Dự đoán kết quả của chương trình sau và giải thích tại sao. Chạy chương trình và so sánh kết quả thật sự với kết quả dự đoán.
+
+#include <stdio.h>
+#define PRINT(format,x)	printf ("x = %"#format"\n", x)
+int main (void)
+{
+	int integer = 5;
+	char character = '5';
+	PRINT(d, character); PRINT(d, integer);
+	PRINT(c, character); PRINT(c, integer=53);
+	return 0;
+}
+
+x = 53
+x = 5
+x = 5
+x = 5
+
+Bài tập 6: 
+Dự đoán kết quả của chương trình sau và giải thích tại sao. Chạy chương trình và so sánh kq thật sự với kq dự đoán.
+
+#include <stdio.h>
+#define PR(x)	printf("x = %.8g\t", (double)x)
+#define PRINT4(x1,x2,x3,x4)	PR(x1); PR(x2); PR(x3); PR(x4)
+int main (void)
+{
+	double d; 
+	float f; 
+	long l; 
+	int i;
+	i = l = f = d = 100/3; PRINT4(i, l, f, d);
+	i = l = f = d = 100/3. ; PRINT4(i, l, f, d);
+	return 0;
+}
+
+x = 33  x = 33  x = 33  x = 33  x = 33 x = 33  x = 33 x = 33.333332 x = 33.333333
+
+Bài tập 7: 
+Viết chương trình tính giá trị biểu thức sau và giải thích kết quả.
+3x3 - 5x2 + 6
+Với x = 2.55.
+
+#include <stdio.h>
+int main (void)
+{
+	float x = 2.55;
+	float y = 3*x*x*x - 5*x*x + 6;
+	printf ("%f", y);
+	return 0;
+}
+
+23.231623
+
+
+CÁC BÀI TẬP THÊM CÓ ĐỘ KHÓ TRUNG BÌNH
+
+1.	Viết chương trình in lên màn hình như sau:
+*************************
+*	THAO CHUONG BANG	*
+*	   NGON NGU C	*
+*************************
+
+2.	Viết chương trình nhập vào năm sinh, in ra tuổi.
+Ví dụ nhập 1988 in ra:
+Ban sinh nam 1988 vay ban 19 tuoi.
+
+3.	Viết chương trình thực hiện các yêu cầu sau (không dùng hàm chuyển đổi):
+a.	Nhập vào một kí tự và in ra mã ASCII tương ứng với kí tự đó.
+b.	Nhập vào một số nguyên (1  255) và in ra kí tự có mã ASCII tương ứng.
+
+4.	Nhập vào bán kính của hình tròn, tính và in ra chu vi, diện tích của hình tròn đó.
+
+5.	Viết chương trình nhập vào 2 số nguyên. Xuất ra min, max.
+Ví dụ: 
+Nhập vào 5 và 7
+Xuất ra: min =5, max = 7
+
+6.	Tìm hiểu ý nghĩa các thông báo lỗi thường gặp.
+
+7.	Tìm hiểu bộ thư viện trợ giúp MSDN.
+CÁC BÀI TẬP THÊM CÓ ĐỘ KHÓ CAO
+
+1.	Nhập vào bán kính đáy R và chiều cao h của hình trụ tròn, tính diện tích đáy, diện tích xung quanh và thể tích của hình trụ tròn theo công thức (các số liệu là số thực, giá trị PI đã được C định nghĩa sẵn bằng hằng số M_PI):
+a.	 
+b.	 
+c.	 
+
+2.	Nhập vào số thực x, tính và in ra các giá trị y1, y2, lầy 2 số lẻ:
+d.	 
+e.	  
+
+3.	Nhập số tiền nguyên N đồng, đổi ra xem được bao nhiêu tờ 10 đồng, 5 đồng, 2 đồng và 1 đồng.
+Ví dụ: 
+N = 543đ = 54 tờ 10đ + 0 tờ 5đ + 1 tờ 2đ + 1 tờ 1đ
+
+4.	Nhập vào số nguyên có 3 chữ số, tính tổng 3 chữ số đó. 
+Ví dụ:
+Số 543 có tổng 3 chữ số là: 5 + 4 + 3 = 12
+
+5.	Viết chương trình nhập giờ, phút, giây và thực hiện kiểm tra tính hợp lệ của dữ liệu nhập vào.
+
+6.	Viết chương trình nhập 2 giờ (giờ, phút, giây) và thực hiện tính '+' và '-' của 2 giờ này.
+
+
+
+
