@@ -1,0 +1,99 @@
+Bài tập:
+
+1. Viết chương trình C++ để in các dòng sau:
+
+Toi nam nay 18 tuoi.
+
+Toi co nhieu hoai bao muon theo duoi.
+
+2. Viết chương trình C++ để in các dấu sao theo dạng sau:
+
+*
+
+**
+
+***
+
+****
+
+*****
+
+******
+
+3. Viết chương trình C++ để khai báo hai biến nguyên, một biến thực và gán các giá trị tương ứng 8, 16 và 15.8 cho chúng. Sau đó in kết quả trên màn hình.
+
+4. Viết chương trình C++ để nhắc người dùng nhập tên của họ, sau đó in kết quả trên màn hình
+
+5. Giả sử có 2 số nguyên cho trước, bạn hãy tính tổng, hiệu, tích và thương của hai số rồi in kết quả ra màn hình.
+
+6. Nhập 2 số nguyên từ bàn phím, tính tổng, trung bình cộng của hai số đó, rồi in kết quả ra màn hình.
+
+7. Giả sử một chiếc ô tô có vận tốc ban đầu v0, gia tốc a và thời gian t. Viết chương trình C++ để tìm vận tốc cuối cùng của ô tô và in kết quả ra màn hình.
+
+Gợi ý:
+
+Sử dụng lệnh cin để nhập các giá trị tương ứng cho v0, a và t.
+Dùng công thức v = v0 + a.t để tính vận tốc cuối cùng
+
+8. Viết chương trình C++ để in kết quả dưới dạng sau:
+
+Gtri x	Gtri y	Bieu Thuc	Ket qua
+18 |	2 |	A=y+3	|A=5
+18 |	2 |	B=y-2	|B=0
+18 |	2 |	C=y*5	|C=10
+18 |	2 |	D=x/y	|D=9
+18 |	2 |	E=x%y	|E=0
+Gợi ý:
+
+Dùng tab và newline để có thể in theo yêu cầu. 
+
+9. Viết chương trình để nhập điểm kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ, sau đó tính tổng điểm và in kết quả ra màn hình dưới dạng sau: 
+
+==========Diem kiem tra================
+Nhap diem kiem tra 1:10
+ 
+Nhap diem kiem tra 2:9
+ 
+Nhap diem kiem tra 3:10
+ 
+==========Diem thi giua ky=============
+Nhap diem thi giua ky:8.5
+ 
+===========Diem thi cuoi ky=============
+Nhap diem thi cuoi ky:10
+ 
+Tong diem kiem tra: 29
+Diem thi giua ky: 8.5
+Diem thi cuoi ky: 10
+.................................
+Tong diem: 47.5 
+
+10. Viết chương trình C++ để nhập hai số nguyên x, y, sau đó tính: p=x*y, s=x+y, q=s2+p(s-x)*(p+y) và in kết quả ra màn hình.
+
+KHÓ:
+
+1. Sử dụng khái niệm nạp chồng toán tử để cộng và trừ hai số phức.
+
+Gợi ý:
+
+Để sử dụng nạp chồng toán tử trong giải bài tập cộng, trừ số phức này, bạn cần làm những việc sau:
+
+Khai báo lớp sophuc: Bao gồm các biến và hàm thành viên
+
+Dùng hàm getvalue() để nhận phần thực, phần ảo của số phức 
+
+Định nghĩa hàm operator+() để cộng hai số phức
+
+Định nghĩa hàm operator-() để trừ hai số phức
+
+Định nghĩa hàm display
+
+Khai báo các số phức i1, i2 và kết quả phép tính kq1, kq2
+
+Gọi hàm getvalue để lấy phần thực và phần ảo cho i1, i2
+
+Gọi hàm operator+() và operator-() để cộng, trừ hai số phức
+
+Gọi hàm display để hiển thị 2 số phức, 2 kết quả cộng, trừ
+
+Trả về các giá trị
